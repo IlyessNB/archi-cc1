@@ -29,7 +29,7 @@ public class UserRepositoryImplementation implements UserRepository{
     }
 
     @Override
-    public User ById(int id) throws UserNotFoundException {
+    public User ById(UserId id) throws UserNotFoundException {
         final User user = users.get(id);
         if (user == null){
             throw new UserNotFoundException();

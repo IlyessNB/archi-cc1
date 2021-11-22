@@ -12,7 +12,7 @@ public final class UserId {
         return new UserId(value);
     }
 
-    public String getValue() {
-        return String.valueOf(value);
+    public int getValue() {
+        return value;
     }
 }

@@ -12,7 +12,7 @@ public interface UserRepository {
 
     void delete (UserId id);
 
-    User ById(int id) throws UserNotFoundException;
+    User ById(UserId id) throws UserNotFoundException;
 
     List<User> findAllUsers();
 }
